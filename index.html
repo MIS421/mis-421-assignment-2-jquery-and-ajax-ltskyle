@@ -4,14 +4,29 @@
 
 <head>
 
-  <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/sunny/jquery-ui.css" integrity="sha384-NQp0lsqh2+QDudr0QsLXMpJCTJ/fu20RpemUI5rBVLDOTEYQaeMb2E65QaOIuh8b" crossorigin="anonymous">
 
+    <title>GalaxyQuery</title>
+    <link rel="icon" type="image/x-icon" href="./imgs/tab-icon.png">
 </head>
 
 <body>
+    <p style="background-image: url(./imgs/background.jpg);">
+        <h1 id="header">GalaxyQuery: The HoloNet Search</h1>
+        <textarea class="ui-widget ui-state-default ui-corner-all" id="query" cols="40" rows="5" placeholder="Enter search text"></textarea><br>
+        <div id="btn-div">
+            <button class="ui-button" id="searchBtn" value="Search" type="submit" onclick="handleSearchClick()">Search</button>
+            <button class="ui-button" id="timeBtn" value="Time">Current Time</button>
+        </div>
+        <div class="FixedHeight">
+            <div id="searchResults" class="content"></div>
+        </div>
+        <div id="time"></div>
 
-  <script type="text/javascript" src="./script.js"></script>
-
+        <script type="text/javascript" src="./script.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha384-1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" integrity="sha384-4D3G3GikQs6hLlLZGdz5wLFzuqE9v4yVGAcOH86y23JqBDPzj9viv0EqyfIa6YUL" crossorigin="anonymous"></script>
 </body>
 
 </html>
